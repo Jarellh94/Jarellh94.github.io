@@ -1,0 +1,32 @@
+
+.VT{
+	color: #C8C8C8; /*silver Color*/
+}
+
+header {
+	background-color: #1E1E1E; /*Grey Color*/
+	color: #F8A204; /*Orange Color*/
+	font: 25px/1.5 Arial, Helvetica, sans-serif;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #1E1E1E 3px solid;
+	text-align: center;
+}
+
+header a{
+	text-decoration: : none;
+	color: #F8A204; /*Orange Color*/
+}
+
+a:link{
+	text-decoration: none;
+}
+
+a:hover{
+	color: #C8C8C8; 
+}
+
+header li{
+	display: inline;
+	padding: 0 10px 0 10px;
+}
