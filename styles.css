@@ -1,0 +1,48 @@
+.banner {
+	background-color: #1E1E1E; /*Grey Color*/
+	color: #5abd4b; /*Greenish Color*/
+	font: 25px/1.5 Arial, Helvetica, sans-serif;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #1E1E1E 3px solid;
+	text-align: center;
+}
+
+.navbar li {
+	display: inline-block;
+	padding: 0 10px 0 10px;
+	cursor: pointer;
+}
+
+.navbar li:hover {
+	color: white;
+}
+
+
+.homeContainer {
+	width: 75%;
+	margin: auto;
+}
+
+.main {
+	background-color: white;
+	float:right;
+	width: 80%;
+	text-align: center;
+	font-size: 35px;
+}
+
+.sidePanel {
+	float: left;
+	background-color: black;
+	width: 20%;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+.sidePanel a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 1em 0 1em 0;
+}
+
