@@ -69,6 +69,10 @@ a {
 	color: inherit;
 }
 
+.mainContainer {
+	overflow: auto;
+}
+
 .main {
 	color: #ea9c25; /*Orange Color*/
 	display: block;
@@ -76,6 +80,25 @@ a {
 	margin: auto;
 	text-align: center;
 	font-size: 25px;
+	
+}
+
+.pinkSection {
+	background-color: #ef7c7c;
+}
+
+.floatLeft {
+	float: left;
+	width: 50%;
+}
+
+.floatRight {
+	float: right;
+	width: 50%;
+}
+
+.highlight {
+	color: #d53829;
 }
 
 .video {
@@ -105,5 +128,3 @@ a {
 	color: white;
 	border: 2px solid black;
 }
-
-
