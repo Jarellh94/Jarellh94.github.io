@@ -1,0 +1,109 @@
+body
+{
+	margin: 0;
+}
+
+.interactable, .button{
+	-webkit-transition: background-color .2s ease-out;
+	transition: background-color .2s ease-out;
+}
+
+.backgroundImage {
+	max-width: 50%;
+	height: auto;
+	margin: auto;
+	display: block;
+}
+
+.banner {
+	color: #ea9c25; /*Orange Color*/
+	font: 20px Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+.navbar {
+	background-color: #d53829; /*Red Color*/
+	margin-left: 0;
+	margin-right: 0;
+    background: -webkit-linear-gradient(#ea9c25, #d53829); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ea9c25, #d53829); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ea9c25, #d53829); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ea9c25, #d53829); /* Standard syntax */
+
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+
+	text-align: center;
+}
+
+.navbar li {
+	background-color: #d53829; /*Red Color*/
+	background: -webkit-linear-gradient(#ea9c25, #d53829); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ea9c25, #d53829); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ea9c25, #d53829); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ea9c25, #d53829); /* Standard syntax */
+
+	color: white;
+	display: inline-block;
+	padding: 10px 10px 10px 10px;
+	/*border-radius: 5px;*/
+	cursor: pointer;
+	-webkit-transition: background-color .2s ease-out;
+	transition: background-color .2s ease-out;
+
+	-webkit-user-select: none;  
+  	-moz-user-select: none;    
+	-ms-user-select: none;      
+  	user-select: none;
+}
+
+.navbar li:hover {
+	background: none;
+	background-color: lightgrey;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.main {
+	color: #ea9c25; /*Orange Color*/
+	display: block;
+	max-width: 80%;
+	margin: auto;
+	text-align: center;
+	font-size: 25px;
+}
+
+.video {
+	position: relative;
+	margin: auto;
+    width: 75%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video iframe {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#getInvolved {
+	font-size: 25px;
+	background-color: white;
+	border: 2px solid black;
+}
+
+#getInvolved:hover{
+	background-color: black;
+	color: white;
+	border: 2px solid black;
+}
+
+
