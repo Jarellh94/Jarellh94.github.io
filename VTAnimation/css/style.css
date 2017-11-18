@@ -1,33 +1,92 @@
 
-.VT{
+* {
 	color: #C8C8C8; /*silver Color*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 750;
+}
+
+.orange {
+	color: #F8A204; /*Orange Color*/
 }
 
 header {
-	background-color: #1E1E1E; /*Grey Color*/
-	color: #F8A204; /*Orange Color*/
-	font: 25px/1.5 Arial, Helvetica, sans-serif;
-	padding-top: 30px;
-	min-height: 70px;
-	border-bottom: #1E1E1E 3px solid;
+	border-top: 5px solid #F8A204;
+}
+
+header h1, h2{
 	text-align: center;
+	margin: 0px;
 }
 
-header a{
-	text-decoration: : none;
-	color: #F8A204; /*Orange Color*/
+.arrowBorder {
+	height: 35px;
+	padding: 5px;
+	width: 100%;
+	margin: 0px;
+	display: inline-block;
+	background: url("../images/arrows.png");
+    background-repeat: repeat-x;
+    background-position: left center;
 }
 
-a:link{
+body {
+	text-align: center;
+	margin: 0;
+}
+
+.links {
+	margin-top: 20px;
+}
+
+.linksList, a{
 	text-decoration: none;
+	display: inline-block;
+	list-style-type: none;
 }
 
-a:hover{
-	color: #C8C8C8; 
+.currVideo {
+	margin: auto;
+	width: 1300px;
+	height: 400px;
+	text-align: left;
 }
 
-header li{
-	display: inline;
-	padding: 0 10px 0 10px;
+.vid {
+	clear: left;
+	background-color: black;
+	width: 600px;
+	height: 300px;
+
+	float: left;
 }
+
+.vidSide {
+	margin: 50px 0 0 50px;
+	float: left;
+	width: 500px;
+}
+
+.footer {
+	clear: both;
+	width: 800px;
+	margin: auto;
+}
+
+.picture {
+	width: 150px;
+	height: 150px;
+	background-color: orange;
+	float: left;
+}
+
+.footerText {
+	margin: 50px 0 0 50px;
+	float: left;
+	width: 75%;
+}
+
+.footerText p{
+	margin: 0;
+}
+
 
