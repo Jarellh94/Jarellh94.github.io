@@ -9,11 +9,19 @@
 	color: #F8A204; /*Orange Color*/
 }
 
-header {
+.headpicture {
+	margin-bottom: -30px;
+}
+
+.header {
 	border-top: 5px solid #F8A204;
 }
 
-header h1, h2{
+.header h1 {
+	font-size: 72px;
+}
+
+.header h1, h2{
 	text-align: center;
 	margin: 0px;
 }
@@ -24,7 +32,7 @@ header h1, h2{
 	width: 100%;
 	margin: 0px;
 	display: inline-block;
-	background: url("../images/arrows.png");
+	background: url("../Images/arrows.png");
     background-repeat: repeat-x;
     background-position: left center;
 }
@@ -54,16 +62,21 @@ body {
 .vid {
 	clear: left;
 	background-color: black;
-	width: 600px;
-	height: 300px;
 
 	float: left;
 }
 
 .vidSide {
-	margin: 50px 0 0 50px;
+	margin: 25px 0 0 50px;
 	float: left;
 	width: 500px;
+	padding: 25px;
+	background: url("../Images/youtube.png"); 
+    background-size: 50%;
+    background-color: rgba(256,256,256, .7);
+	background-blend-mode: color;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .footer {
