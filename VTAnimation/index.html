@@ -12,7 +12,7 @@
 		<img class ="headpicture" src="Images/head.png">
 		<h1><span class="orange">VT</span>ANIMATION</h1>
 		<h2>ANIMATOR ILLUSTRATOR YOUTUBER PROFESSIONAL KNITTER</h2>
-		<div class="arrowBorder"></div>
+		<div id="arrowBorder"></div>
 	</div>
 
 	<h2><span class="orange">WELCOME</span> TO MY <span class="orange">WEBSITE! </span> FEEL FREE TO <span class="orange">CLICK</span> on <span class="orange">EVERYTHING BELOW.</span></h2>
@@ -50,4 +50,21 @@
 		</div>
 	</div>
 </body>
+
+<script>
+	var arrowBorder = document.getElementById("arrowBorder");
+	var id = setInterval(frame, 16.66);
+	var pos = 0;
+
+	function frame()
+	{
+		if(pos == 100)
+			pos = 0;
+		else
+		{
+			pos += .08;
+			arrowBorder.style.backgroundPosition = pos + "% center"; 
+		}
+	}
+</script>
 </html>
