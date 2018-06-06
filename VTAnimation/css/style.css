@@ -60,6 +60,10 @@ body {
 	text-align: center;
 	width: 95%;
 	clear: both;
+	display: flex;
+  	justify-content: center;
+  	margin-bottom: 25px;
+  	flex-wrap: wrap;
 }
 
 .vid {
@@ -68,15 +72,20 @@ body {
 }
 
 .vidSide {
-	width: 500px;
+	width: 450px;
 	padding: 25px;
 	display: inline-block;
+	text-align: center;
 	background: url("../Images/youtube.png"); 
     background-size: 50%;
     background-color: rgba(256,256,256, .7);
 	background-blend-mode: color;
 	background-position: center center;
 	background-repeat: no-repeat;
+}
+
+.vidSide p{
+	margin-top: 35px;
 }
 
 .footer {
