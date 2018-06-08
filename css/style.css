@@ -1,0 +1,233 @@
+body {
+	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+
+/* Global */
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.highlight {
+	color: #009900;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.button_1 {
+	background-color: #009900;
+	padding: 5px 10px 5px 10px;
+	width: 30px;
+	border: none;
+	color: #f4f4f4;
+	font-size: 20px;
+}
+
+.button_1:hover{
+	background-color: #006600;
+}
+
+/* Header */
+header {
+	background: #272727;
+	color: #f4f4f4;
+	padding-top: 20px;
+	min-height: 35px;
+}
+
+header a {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #009900;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 10px 0 10px;
+}
+
+header #branding {
+	float: left;	
+}
+
+header #branding h1{
+	margin: 0;
+}	
+
+header nav{
+	float: right;
+	margin-top: 25px;
+}
+
+header .current{
+	background-color: #f4f4f4;
+}
+
+header a:hover {
+	color: #cccccc;
+}
+
+/* About Section*/
+#about {
+	min-height: 200px;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.aboutMe {
+	width: 60%;
+	min-width: 300px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.aboutMe img{
+	width: 30%;
+	max-width: 150px;
+	min-width: 75px;
+    border-radius: 50%;
+	display: inline-block;
+	padding-top: 5px;
+    height: auto;
+	vertical-align: middle;
+}
+
+.aboutText {
+	width: 60%;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 15px;
+	color: #272727;
+	font-weight: bold;
+}
+
+.aboutSkills {
+	background-color: #272727;
+	padding-top: 10px;
+	min-height: 200px;
+	max-width: 300px;
+	text-align: center;
+	display: inline-block;
+	color: #f4f4f4;
+}
+
+.aboutSkills h1, p{
+	margin: 0;
+}
+
+.aboutSkills img{
+	height: 50px;
+	width: auto;
+	display: inline-block;
+	margin: 10px;
+}
+
+/* Projects */
+#projects {
+	margin-top: 25px;
+	text-align: center;
+	color: #f4f4f4;
+}
+
+#projects .leftColumn {
+	display: inline-block;
+	background-color: #272727;
+	padding: 10px 10px 30px 10px;
+	max-width: 55%;
+	min-width: 240px;
+	vertical-align: top;
+}
+
+.leftColumn h1{
+	text-align: left;
+	font-size: 35px;
+	color: #009900;
+	margin: 0 0 0 25px;
+}
+
+.post img {
+	width: 30%;
+	float: left;
+	margin: 0 25px 0 25px;
+}
+
+.post p {
+	width: 100%;
+	text-align: left;
+}
+
+#projects .rightColumn {
+	display: inline-block;
+	max-width: 40%;
+	text-align: center;
+	vertical-align: top;
+	min-width: 240px;
+}
+
+.rightColumn h1 {
+	margin: 0;
+	color: #272727;
+	font-size: 25px;
+	padding-bottom: 5px;
+}
+.project {
+	background-color: #272727;
+	display: inline-block;
+	margin: 0px 0px 5px 0px;
+	padding: 5px;
+	width: 75%;
+}
+
+.project img {
+	display: inline-block;
+	width: 35%;
+	vertical-align: top;
+	float: left;
+	padding: 10px;
+}
+
+.project h3 {
+}
+
+.projectButton {
+	background-color: #009900;
+	padding: 0px 10px 0px 10px;
+	width: 50px;
+	border: none;
+	color: #f4f4f4;
+	font-size: 20px;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+}
+
+.projectButton:hover{
+	background-color: #006600;
+}
+
+/* Footer */
+footer {
+	padding: 10px;
+	margin-top: 30%;
+	text-align: center;
+	background-color: #272727;
+	color: #f4f4f4;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/* Projects Page */
+.constructionMessage {
+	text-align: center;
+	margin-top: 50px;
+	color: #009900;
+}

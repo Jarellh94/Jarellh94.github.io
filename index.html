@@ -1,27 +1,81 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content = "width=device-width">
+	<title>JHackettSoftware - Home</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
 	<header>
-		<title>Jarell Hackett</title>
-		<link href="./styles.css" rel="stylesheet" type="text/css">
+		<div class="container">
+			<div id="branding">
+				<h1><span class="highlight">JHackett</span>Software</h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
-	<body>
-		<div class="banner">
-			<h1>Jarell Hackett</h1>
-				<ul class="navbar">
-				<li>Home</li>
-				<li>About</li>
-				<li><a href="Projects/projects.html">Projects</a></li>
-				<li>Contact</li>
-		</div>
-		<div class="homeContainer">
-			<div class="main">
-				<p>My Name is Jarell Hackett. I'm a software developer.</p>
-			</div>
-			<div class="sidePanel">
-				<li><a href="resume.docx">Resume</a></li>
-				<li><a href="https://Jarellh94.github.io/VTAnimation/index.html">Artist's Website</a></li>
-				<li><a href="https://Jarellh94.github.io/ReachandLove/index.html">Charity Organization</a></li>
+
+	<section class="container" id="about">
+		<div class="aboutMe">
+			<img src="./img/jarellFace.jpg">
+			<div class="aboutText">
+				<h1>Jarell Hackett</h1>
+				<p>Practicing Software Engineer. Dabbling web development while developing games in his spare time.</p>
 			</div>
 		</div>
-	</body>
+
+		<div class="aboutSkills">
+			<h1>Skills</h1>
+			<img src="./img/cpp_logo.png">
+			<img src="./img/cSharpLogo.png">
+			<img src="./img/javaLogo.png">
+			<img src="./img/unity3d-logo.png">
+			<img src="./img/html-css-js.png">
+			<img src="./img/php_mysql.png">
+		</div>
+	</section>
+
+	<section class= "container" id="projects">
+		<div class="leftColumn">
+			<h1>Currently Working On...</h1>
+			<article class="post">
+				<h2>Unnamed 2D Platformer - Adding Enemies</h2>
+				<img src="./img/spaceShooterScreen.png">
+				<p>2D platformer now has a few more enemies. Introducing the water grenader. A dug in mosquito soldier that throws water droplets like grenades. When hit with these droplets, the player’s jump height is lowered. More nonsense about how it was difficult or whatever and bugs that might have been added and other things. Ideas on what I can work on next.</p>
+			</article>
+		</div>
+
+		<div class="rightColumn">
+			<h1>Past Projects</h1>
+			<div class ="project">
+				<img src="./img/spaceShooterScreen.png">
+				<h3>Space Shooter</h3>
+				<p>A web game created by following a unity tutorial, and then built upon to add more game features.</p>
+				<a class="projectButton" href="#">Play</a>
+			</div>
+			<div class ="project">
+				<img src="./img/verseSwipeScreen.png">
+				<h3>Verse Swipe</h3>
+				<p>A mobile game in which the player sorts through quotes that may or may not be taken from the bible.</p>
+			</div>
+			<div class ="project">
+				<img src="./img/vtWebsiteScreen.png">
+				<h3>Artist's Website</h3>
+				<p>A website created for the artist VTAnimation. Displaying his information and most recent animation.</p>
+				<a class="projectButton" href="https://www.VTAnimation.com">Visit</a>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p><span class="highlight">JHackett</span>Software</p>
+	</footer>
+</body>
 </html>
