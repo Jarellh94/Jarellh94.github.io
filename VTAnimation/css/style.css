@@ -16,15 +16,23 @@
 .header {
 	border-top: 5px solid #F8A204;
 	width: 100%;
+	margin-bottom: 15px;
 }
 
 .header h1 {
 	font-size: 72px;
 }
 
-.header h1, h2{
+.header h1, .header h2{
 	text-align: center;
 	margin: 0px;
+	margin-top: -3px;
+}
+
+.header h2 {
+	margin-top: -15px;
+	background-color: #F8A204;
+	padding: 5px;
 }
 
 #arrowBorder {
@@ -42,6 +50,7 @@ body {
 	text-align: center;
 	margin: 0;
 	width: 100%;
+	border-bottom: 5px solid #F8A204;
 }
 
 .links {
@@ -98,16 +107,6 @@ body {
 	height: 150px;
 	background-color: orange;
 	float: left;
-}
-
-.footerText {
-	margin: 50px 0 0 50px;
-	float: left;
-	width: 75%;
-}
-
-.footerText p{
-	margin: 0;
 }
 
 

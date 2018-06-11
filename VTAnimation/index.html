@@ -5,18 +5,19 @@
 	<meta name="description" content="Website for Animator and Youtuber VTAnimation">
 	<meta name="author" content="Jarell Hackett">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="icon" type="image/png" href="./Images/favicon-32x32.png" sizes="32x32" />
 	<title>VTAnimation Home Page</title>
 </head>
 <body>
 	<div class="header">
 		<img class ="headpicture" src="Images/head.png">
 		<h1><span class="orange">VT</span>ANIMATION</h1>
-		<h2>ANIMATOR ILLUSTRATOR YOUTUBER PROFESSIONAL KNITTER</h2>
-		<div id="arrowBorder"></div>
+		<h2>ANIMATOR  &#9679 ILLUSTRATOR &#9679 YOUTUBER &#9679 PROFESSIONAL KNITTER</h2>
+		<!--<div id="arrowBorder"></div>-->
 	</div>
 
 	<h2><span class="orange">WELCOME</span> TO MY <span class="orange">WEBSITE! </span> FEEL FREE TO <span class="orange">CLICK</span> on <span class="orange">EVERYTHING BELOW.</span></h2>
-	<h2>(IT WON'T HURT YOU)</h2>
+	<h3>(IT WON'T HURT YOU)</h3>
 
 	<div class="links">
 		<ul class = "linksList">
@@ -42,29 +43,6 @@
 			<p>HE ALSO ANIMATES FOR <span class="orange">OTHER YOUTUBERS</span> THAT COLLECTIVELY GARNERED OVER <span class="orange">3 MILLION VIEWS</span>.</p>
 		</div>
 	</div>
-	<div class="footer">
-		<div class="picture"></div>
-		<div class="footerText">
-				<p>CONSIDER <span class="orange">SUPPORTING ME</span> ON <span class="orange">PATREON!</span></p>
-				<p><span class="orange">$5</span> FOR <span class="orange">EARLY ACCESS</span> TO <span class="orange">VIDEOS</span> AND <span class="orange">BEHIND THE SCENES PROGRESS!</span></p>
-		</div>
-	</div>
+	
 </body>
-
-<script>
-	var arrowBorder = document.getElementById("arrowBorder");
-	var id = setInterval(frame, 16.66);
-	var pos = 0;
-
-	function frame()
-	{
-		if(pos == 100)
-			pos = 0;
-		else
-		{
-			pos += .08;
-			arrowBorder.style.backgroundPosition = pos + "% center"; 
-		}
-	}
-</script>
 </html>
