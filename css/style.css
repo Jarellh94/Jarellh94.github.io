@@ -131,6 +131,10 @@ header a:hover {
 	margin: 10px;
 }
 
+.aboutSkills a{
+	text-decoration: none;
+}
+
 /* Projects */
 #projects {
 	margin-top: 25px;
