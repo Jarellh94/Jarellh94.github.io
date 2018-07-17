@@ -1,5 +1,5 @@
 .projectBox{
-	perspective: 100px;
+	perspective: 1000px;
 }
 
 .projectBox:hover .flipper, .projectBox.hover .flipper {
