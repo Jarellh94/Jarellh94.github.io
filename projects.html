@@ -35,11 +35,13 @@
 					<p class="projectName">Space Shooter</p>
 					<img class="projectImage">
 					<a class = "projectButton" href="/Projects/SpaceShooter/spaceGame.html">Play</a>
+					<a class="flipButton">About</a>
 				</div>
 				<div class="back project">
 					<p class="projectName">Name: Space Shooter</p>
 					<p class="prjectDescription">Description: This is a galaga-style game where you battle never ending waves of enemies with increasing difficulty.</p>
 					<p class="technology">Technology Used: </p>
+					<a class="flipButton">Back</a>
 				</div>
 			</div>
 		</div>
@@ -53,6 +55,20 @@
 			<a class = "projectButton" href="https://www.VTAnimation.com">Visit</a>
 		</div>
 	</div>
+	<script type="text/javascript">
+		var x = document.getElemtsByClassName("flipButton");
+		x.forEach(function(element) {
+			element.addEventListener('click', function( event ) {
+
+				event.preventDefault();
+				var elem = element.parentElement.parentElement;
+				if(elem.className == 'flipper flip')
+					elem.className = 'flipper';
+				else
+					elem.className = 'flipper flip';
+			}, false);
+		});
+	</script>
 
 	<footer>
 		<p><span class="highlight">JHackett</span>Software</p>
