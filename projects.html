@@ -57,7 +57,7 @@
 	</div>
 	<script type="text/javascript">
 		var x = document.getElementsByClassName("flipButton");
-		x.forEach(function(element) {
+		Array.from(x).forEach(function(element) {
 			element.addEventListener('click', function( event ) {
 
 				event.preventDefault();
