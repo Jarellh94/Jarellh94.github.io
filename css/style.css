@@ -278,20 +278,6 @@ footer {
 	text-align: center;
 }
 
-/*
-.flipButton {
-	background-color: #009900;
-	padding: 0px 10px 0px 10px;
-	width: 50px;
-	border: none;
-	color: #f4f4f4;
-	font-size: 20px;
-	display: inline-block;
-	text-align: center;
-	text-decoration: none;
-	margin-top: 15px;
-}*/
-
 .projectName {
 	text-align: center;
 	color: #f4f4f4;
@@ -303,6 +289,7 @@ footer {
 	width: 75%;
 	vertical-align: top;
 	padding: 10px;
+	float: none;
 }
 
 .projectDescription, .technology{
