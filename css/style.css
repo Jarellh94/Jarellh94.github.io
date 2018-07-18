@@ -266,10 +266,16 @@ footer {
 	color: #009900;
 }
 
-.flipper {
-
+.projectsContainer {
+	margin: 15px;
 }
 
+.projectBox {
+	display: inline-block;
+	margin: 15px
+}
+
+/*
 .flipButton {
 	background-color: #009900;
 	padding: 0px 10px 0px 10px;
@@ -280,4 +286,23 @@ footer {
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;
+	margin-top: 15px;
+}*/
+
+.projectName {
+	text-align: center;
+	color: #f4f4f4;
+	font-size: 35px;
+}
+
+.project img {
+	display: inline-block;
+	width: 75%;
+	vertical-align: top;
+	padding: 10px;
+}
+
+.prjectDescription {
+	color: #f4f4f4;
+	font-size: 20px;
 }
