@@ -177,6 +177,12 @@ header a:hover {
 	margin: 0 25px 0 25px;
 }
 
+.post video {
+	width: 30%;
+	float: left;
+	margin: 0 25px 0 25px;
+}
+
 .post .embedGif {
 	width: 30%;
 	float: left;

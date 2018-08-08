@@ -60,6 +60,22 @@
 		<div class="leftColumn">
 			<h1>Currently Working On...</h1>
 			<article class="post">
+				<h2>Unnamed 2D Platformer - New Enemies</h2>
+				<video  controls="controls" name="video"
+					src="vid/NewEnemies.mp4">
+				</video>
+				<p>August 8, 2018 - I added 3 new enemies. A large strong enemy that takes multiple hits and does more damage. He uses the same movement scripts as a normal roaming enemy. A variation on the shooting enemy that targets the player. It patrols and uses a raycast to see the player. Once it does, it stops and starts shooting. A grenader type enemy that sits in the ground and throws projectiles. In adding this enemy, I added a new throwable projectile type. Each projectile has a variable on whether or not it is throw. If thrown, then when fired force is added vertically as well as horizontally, producing an ark handled by the physics engine. </p>
+				<div class="bottomLine"></div>
+			</article>
+			<article class="post">
+				<h2>Unnamed 2D Platformer - Level Hazards and Falling Platforms</h2>
+				<video  controls="controls" name="video"
+					src="vid/PlatformFountain.mov">
+				</video>
+				<p>August 8, 2018 - I recently started working on more interesting level mechanics. I've created a class for level hazards that deal damage to the player. They can be of a few different types, such as water, falling rocks, and spikes. I've also added falling platforms. They work by placing a platform spawner in the level that spawns a new platform after a set time passes after the previous platform falls. The platform respawn speed and falling speed can aslo be customized per platform. To the left is a small bug that caused platform spawners to spawn platforms constantly. Producing a Platform Fountain.</p>
+				<div class="bottomLine"></div>
+			</article>
+			<article class="post">
 				<h2>Unnamed 2D Platformer - Added Armor Pickup and Shooting Enemy</h2>
 				<img src="img/armorShooter.gif">
 				<p>June 12, 2018 - 2D Platformer now has equippable armor. Armor adds another health point to the player. Currently no UI representation. I also added an enemy that fires prefabbed projectiles. New enemy uses new EnemyShooter class that functions similar to the player's gun class and allows for multiple kinds of projectiles to be fired. Also added physics to the bullets to allow for dropping.</p>
