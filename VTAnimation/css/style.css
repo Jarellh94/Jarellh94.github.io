@@ -10,7 +10,7 @@
 }
 
 .headpicture {
-	margin-bottom: -30px;
+	margin-bottom: 11px;
 }
 
 .header {
@@ -32,7 +32,7 @@
 .header h2 {
 	margin-top: -15px;
 	background-color: #F8A204;
-	padding: 5px;
+	padding: 2px;
 }
 
 #arrowBorder {
@@ -50,11 +50,10 @@ body {
 	text-align: center;
 	margin: 0;
 	width: 100%;
-	border-bottom: 5px solid #F8A204;
 }
 
 .links {
-	margin-top: 20px;
+	display: inline-block;
 }
 
 .linksList, a{
@@ -67,12 +66,10 @@ body {
 	margin: auto;
 	height: auto;
 	text-align: center;
-	width: 95%;
-	clear: both;
-	display: flex;
   	justify-content: center;
   	margin-bottom: 25px;
-  	flex-wrap: wrap;
+	flex-wrap: wrap;
+	display: inline-block;
 }
 
 .vid {
@@ -84,13 +81,13 @@ body {
 	width: 450px;
 	padding: 25px;
 	display: inline-block;
-	text-align: center;
 	background: url("../Images/youtube.png"); 
     background-size: 50%;
     background-color: rgba(256,256,256, .7);
 	background-blend-mode: color;
 	background-position: center center;
 	background-repeat: no-repeat;
+	text-align: center;
 }
 
 .vidSide p{
@@ -98,8 +95,11 @@ body {
 }
 
 .footer {
-	width: 800px;
-	margin: auto;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 7px;
+	background-color: #F8A204;
 }
 
 .picture {
