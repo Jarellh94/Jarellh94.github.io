@@ -2,66 +2,108 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="Website for Animator and Youtuber VTAnimation">
+	<meta name="description" content="Website for Animator and Youtuber VTANIMATION">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Jarell Hackett">
 	<link rel="stylesheet" href="./css/style.css">
+	<script src="script.js"></script>
 	<link rel="icon" type="image/png" href="./Images/favicon-32x32.png" sizes="32x32" />
-	<title>VTAnimation</title>
+	<title>VTANIMATION</title>
 </head>
 <body>
-	<div class="header">
-		<img src="Images/vt_1.png" style="height:auto; width: 55%;">
-		<img class ="headpicture" src="Images/head.png">
-		<!--<h2>ANIMATOR  &#9679 ILLUSTRATOR &#9679 YOUTUBER &#9679 PROFESSIONAL KNITTER</h2>-->
-		<h2 style="font-size: 3em">
-			<img src="Images/vt_8.png" style="vertical-align: middle; height:auto; width: 15%;"> 
-			-
-			<img src="Images/vt_9.png" style="vertical-align: middle; height:auto; width: 14%;">
-		</h2>
+	<div class="header sticky">
+		<div class="headerImage">
+			<img src="Images/header.png" >
+		</div>
+		<div class="socialLinks">
+			<div class="linkIcon">
+				<a href="https://www.youtube.com/VTANIMATION"><img src="Images/youtubeIcon.PNG" alt="Youtube Link"></a>
+			</div>
+			<div class="linkIcon">
+				<a href="https://www.twitter.com/vtanimation"><img src="Images/twitterIcon.PNG" alt="Twitte rLink"></a>
+			</div>
+			<div class="linkIcon">
+				<a href="https://www.instagram.com/VTAnimation"><img src="Images/instagramIcon.PNG"  alt="Instagram Link"></a>
+			</div>
+			<div class="linkIcon">
+				<a href="https://discord.gg/fTaDBRv"><img src="Images/discord.PNG" alt="Discord Link"></a>
+			</div>
+		</div>
+	</div>
+	<div class="mainContent">
+		<br>
+		<div class="content newVideo">
+			<h1 class="sectionHeader">
+				What's <span class="blue">New</span> To The <span class="blue">Channel</span>
+			</h1>
+			<div style="--aspect-ratio: 16/9;">
+				<iframe class="vid" width="1600" height="900" src="https://www.youtube.com/embed/vpXzCmijESQ" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="vtImage">
+			<img src="Images/VTImage.png">
+		</div>
+		<div class="comingSoon">
+			<div class="content">
+				<h1 class="sectionHeader">
+					Coming <span class="blue">Soon</span> To <span class="blue">VT</span>Animation
+				</h1>
+				<h1 style="font-size: 3em; margin: 0">
+					<span class="blue">Jenna Harley</span>
+				</h1>
+				<h2 style="margin: 0">
+					And The Universe Machine
+				</h2>
+
+				<p>
+					<span class="blue">SHANNON KIRKWOOD</span>, <span class="blue">CHRISTIAN 'O BOYLE</span>, AND <span class="blue">SARAH MCMANUS</span> STAR IN AN UPCOMING PILOT COMING TO <span class="blue">VT</span>ANIMATION.
+				</p>
+				<p>
+					AN ASPIRING <span class="blue">ASTROLOGIST</span> AND HER <span class="blue">ROBOT</span> Lose a <span class="blue">friend</span> among the stars. and now they make it their <span class="blue">mission</span> to jump into the <span class="blue">universe</span> and try to bring him <span class="blue">home.</span>
+				</p>
+			</div>
+
+			<div class="dottedLine"></div>
+
+			<div class="content">
+				<h1 style="margin: 0">
+					<span class="blue">VT</span>ANIMATION'S
+					<br>
+					<span class="blue">MONOLOGUE</span>IMATION
+				</h1>
+				<p>
+					<span class="blue">VOICE ACTORS</span> GIVE <span class="blue">VT</span>ANIMATION THE CHALLENGE TO <span class="blue">ANIMATE</span> AROUND THEIR <span class="blue">PERFORMANCES</span>.
+					<span class="blue">ANYTHING</span> GOES.
+					<br>
+					COMING <span class="blue">2020</span>
+				</p>
+			</div>
+		</div>
 		
-		<!--<div id="arrowBorder"></div>-->
+		<div class="content contact">
+			<h1 class="sectionHeader">
+				<span class="blue">Contact</span> For <span class="blue">Business</span>
+			</h1>
+			<p>
+				Contact VT for ANIMATION or illustration commissions, requests, or questions!
+			</p>
+			<a id="emailLink" href="mailto:vtclark2010@gmail.com" target="_blank"
+				onmouseover="highlightText('emailLink', 'blue')"
+				onmouseout="unHighlightText('emailLink')">Email Me</a>  
+			
+		</div>
 	</div>
 
-	<!-- <h2><span class="orange">WELCOME</span> TO MY <span class="orange">WEBSITE! </span> FEEL FREE TO <span class="orange">CLICK</span> on <span class="orange">EVERYTHING BELOW.</span></h2>
-	<h3>(IT WON'T HURT YOU)</h3>
-
-	<div class="links">
-		<ul class = "linksList">
-			<li><span class="orange">YOUTUBE</span></li>
-			<li><a href="https://www.youtube.com/VTAnimation">WWW.YOUTUBE.COM/VTANIMATION</a></li>
-			<li><span class="orange">FACEBOOK</span></li>
-			<li><a href="https://www.facebook.com/VTAnimation">WWW.FACEBOOK.COM/VTANIMATION</a></li>
-			<li><span class="orange">TWITTER</span></li>
-			<li><a href="https://www.twitter.com/VTAnimated">WWW.TWITTER.COM/VTANIMATION(@VTANIMATED)</a></li>
-			<li><span class="orange">INSTAGRAM</span></li>
-			<li><a href="https://www.instagram.com/VTAnimation">WWW.INSTAGRAM.COM/VTANIMATION</a></li>
-			<li><span class="orange">TUMBLR</span></li>
-			<li><a href="https://vtanimation.tumblr.com">VTANIMATION.TUMBLR.COM</a></li>
-		</ul>	
-	</div>
-	-->
-
-	<div class="currVideo">
-		<!--<div class="vid"></div> -->
-		<iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/vpXzCmijESQ" frameborder="0" allowfullscreen></iframe>
+		<footer>
+			<div>
+				©2020 VTAnimation
+			</div>
+			<div class="divider">-</div>
+			<div>
+				Site by <a id="myLink" style="text-decoration: none;" href="https://JHackettSoftware.com" target="_blank" onmouseover="highlightText('myLink', 'blue')" onmouseout="unHighlightText('myLink')">JHackettSoftware</a>
+			</div>
+		</footer>
 	</div>
 
-	<div class="links">
-		<ul class = "linksList">
-			<li><a href="https://www.youtube.com/VTAnimation"><img src="Images/vt_10.png" style="height:auto; width: 55%;" alt="Youtube Link"></a></li>
-			<li><a href="https://www.facebook.com/VTAnimation"><img src="Images/vt_10.png" style="height:auto; width: 55%;" alt="Facebook Link"></a></li>
-			<li><a href="https://www.twitter.com/VTAnimated"><img src="Images/vt_10.png" style="height:auto; width: 55%;" alt="Twitte rLink"></a></li>
-			<li><a href="https://www.instagram.com/VTAnimated"><img src="Images/vt_10.png" style="height:auto; width: 55%;" alt="Instagram Link"></a></li>
-			<li><a href="https://vtanimation.tumblr.com"><img src="Images/vt_10.png" style="height:auto; width: 55%;" alt="Tumblr Link"></a></li>
-		</ul>	
-	</div>
-	<br>
-	<div class="vidSide">
-		<p><span class="orange">2D ANIMATING</span> SINCE 2010 AND LAUNCHING HIS <span class="orange">CHANNEL</span> IN 2012, <span class="orange">VTANIMATION</span> HAS ACCUMULATED OVER <span class="orange">5 MILLION VIEWS</span> ON <span class="orange">YOUTUBE</span>.</p>
-		<p>HE ALSO ANIMATES FOR <span class="orange">OTHER YOUTUBERS</span> THAT COLLECTIVELY GARNERED OVER <span class="orange">3 MILLION VIEWS</span>.</p>
-	</div>
-
-	<div class="footer"></div>
-	
 </body>
 </html>

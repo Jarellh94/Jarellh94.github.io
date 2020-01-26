@@ -1,112 +1,308 @@
 
+@font-face {
+	font-family: "Heavitas";
+	src: url("Heavitas.ttf");
+}
+
 * {
-	color: #C8C8C8; /*silver Color*/
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 750;
+	color: gray; /*silver Color #C8C8C8;*/
+	font-family: Heavitas;
+	margin: 0;
 }
 
 .orange {
 	color: #F8A204; /*Orange Color*/
 }
 
-.headpicture {
-	margin-bottom: 11px;
+.blue {
+	color: #3366ff;
 }
 
-.header {
-	border-top: 5px solid #F8A204;
-	width: 100%;
-	margin-bottom: 15px;
+:root {
+	--content-bg-color: rgb(211, 211, 211);
+	--blue-color: #3366ff;
 }
 
-.header h1 {
-	font-size: 72px;
-}
-
-.header h1, .header h2{
-	text-align: center;
-	margin: 0px;
-	margin-top: -3px;
-}
-
-.header h2 {
-	margin-top: -15px;
-	background-color: #F8A204;
-	padding: 2px;
-}
-
-#arrowBorder {
-	height: 35px;
-	padding: 5px;
-	width: 100%;
-	margin: 0px;
-	display: inline-block;
-	background: url("../Images/arrow.png");
-    background-repeat: repeat-x;
-    background-position: 8% center;
-}
-
-body {
-	text-align: center;
-	margin: 0;
+/*Taken from https://css-tricks.com/responsive-iframes/*/
+[style*="--aspect-ratio"] > :first-child {
 	width: 100%;
 }
-
-.links {
-	display: inline-block;
-}
-
-.linksList, a{
-	text-decoration: none;
-	display: inline-block;
-	list-style-type: none;
-}
-
-.currVideo {
-	margin: auto;
+[style*="--aspect-ratio"] > img {  
 	height: auto;
-	text-align: center;
-  	justify-content: center;
-  	margin-bottom: 25px;
-	flex-wrap: wrap;
-	display: inline-block;
-}
-
-.vid {
-	background-color: black;
-	display: inline-block;
-}
-
-.vidSide {
-	width: 450px;
-	padding: 25px;
-	display: inline-block;
-	background: url("../Images/youtube.png"); 
-    background-size: 50%;
-    background-color: rgba(256,256,256, .7);
-	background-blend-mode: color;
-	background-position: center center;
-	background-repeat: no-repeat;
-	text-align: center;
-}
-
-.vidSide p{
-	margin-top: 35px;
-}
-
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 7px;
-	background-color: #F8A204;
-}
-
-.picture {
-	width: 150px;
-	height: 150px;
-	background-color: orange;
-	float: left;
+} 
+@supports (--custom:property) {
+	[style*="--aspect-ratio"] {
+		position: relative;
+	}
+	[style*="--aspect-ratio"]::before {
+		content: "";
+		display: block;
+		padding-bottom: calc(100% / (var(--aspect-ratio)));
+	}  
+	[style*="--aspect-ratio"] > :first-child {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+	}  
 }
 
 
+@media only screen and (max-width: 700px) {
+	
+	body {
+		text-align: center;
+		margin: 0;
+		width: 100%;
+		background-image: url("../Images/background.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+
+	.headpicture {
+		margin-bottom: 11px;
+	}
+
+	.header {
+		width: 100%;
+		margin-bottom: 15px;
+		background-color: var(--content-bg-color);
+	}
+
+	.header h1 {
+		font-size: 72px;
+	}
+
+	.header h1, .header h2{
+		text-align: center;
+		margin: 0px;
+		margin-top: -3px;
+	}
+
+	.headerImage img {
+		height: auto;
+		width: 400px;
+		padding-top: 1em;
+	}
+
+	.header h2 {
+		margin-top: -15px;
+		background-color: #F8A204;
+		padding: 2px;
+	}
+
+	.sticky {
+		position: fixed;
+		top: 0;
+		z-index: 1;
+		width: 100%;
+	}
+
+	.mainContent {
+		width: 95%;
+		margin: auto;
+		overflow: hidden;
+		padding-top: 100px;
+	}
+
+	.vtImage {
+		display: none;
+	}
+
+	.content {
+		/* background-color: var(--content-bg-color);
+		border: 2px solid var(--content-bg-color); */
+		display: inline-block;
+		border-radius: 6px;
+		margin: 10px;
+		padding: 10px;
+	}
+
+	.about {
+		background-color: var(--content-bg-color);
+		margin: 10px 10px 10px 30px;
+		min-width: 500px;
+	}
+
+	.contact {
+		vertical-align: top;
+		min-width: 400px;
+	}
+
+	.social {
+		vertical-align: top;
+		min-width: 300px;
+	}
+
+	.link {
+		display: block;
+		float: left;
+	}
+
+	.linkIcon {
+		display: inline;
+	}
+
+	.linkIcon a img{
+		height: 25px; 
+		width: auto;
+	}
+
+	.dottedLine {
+		text-align: center;
+		display: inline-block;
+		border-bottom: 10px dotted var(--blue-color);
+		width: 60%;
+	}
+
+	.sectionHeader {
+		border-bottom: 3px solid #808080;
+		margin-bottom: 5px;
+	}
+
+	footer {
+		background-color: var(--content-bg-color);
+	}
+
+	footer .divider {
+		display: none;
+	}
+
+	.picture {
+		width: 150px;
+		height: 150px;
+		background-color: orange;
+		float: left;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	body {
+		text-align: center;
+		margin: 0;
+		width: 100%;
+		background-image: url("../Images/background.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+		background-position: 0px -500px;
+	}
+
+	.headpicture {
+		margin-bottom: 11px;
+	}
+	
+	.header {
+		width: 100%;
+		margin-bottom: 15px;
+		background-color: var(--content-bg-color);
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	.headerImage {
+		text-align: left;
+		padding-left: 25px;
+	}
+	
+	.headerImage img {
+		height: auto;
+		width: 400px;
+	}
+	
+	.sticky {
+		width: 100%;
+	}
+
+	.socialLinks {
+		flex: space-between;
+		padding-right: 15px;
+		padding-bottom: 10px
+	}
+
+	.link {
+		display: block;
+		float: left;
+	}
+
+	.linkIcon {
+		display: inline;
+	}
+
+	.linkIcon a img{
+		height: 25px; 
+		width: auto;
+	}
+
+	.dottedLine {
+		text-align: center;
+		display: inline-block;
+		border-bottom: 10px dotted var(--blue-color);
+		width: 60%;
+	}
+	
+	.mainContent {
+		width: 80%;
+		margin: auto;
+		overflow: hidden;
+		display: block;
+
+	}
+
+	.newVideo {
+		min-width: 400px;
+		width: 55%;
+		float: right;
+	}
+
+	.vtImage {
+		float: left;
+		width: 36%;
+		padding-top: 85px;
+	}
+
+	.vtImage img {
+		width: 100%;
+	}
+
+	.comingSoon {
+		min-width: 600px;
+	}
+
+	.contact {
+		clear: both;
+	}
+
+	.sectionHeader {
+		border-bottom: 3px solid #808080;
+		display: inline-block;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	.content {
+		/* background-color: var(--content-bg-color);
+		border: 2px solid var(--content-bg-color);  */
+		display: inline-block;
+		border-radius: 6px;
+		margin: 10px;
+		padding: 10px;
+   }
+
+	footer {
+		background-color: var(--content-bg-color);
+		padding-top: 10px;
+		margin-top: 15px;
+	}
+
+	footer div {
+		display: inline-block;
+		padding: 0px 5px 0px 5px;
+	}
+
+	footer .divider {
+		display: inline-block;
+	}
+}
