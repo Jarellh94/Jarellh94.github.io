@@ -161,6 +161,14 @@
 		margin-bottom: 5px;
 	}
 
+	.comingSoon {
+		width: 95%;
+	}
+
+	.contact {
+		width: 95%;
+	}
+
 	footer {
 		background-color: var(--content-bg-color);
 	}
